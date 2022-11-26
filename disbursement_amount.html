@@ -7,15 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disbursement Amount</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         .header {
             display: flex;
             justify-content: center;
+        }
+        th,td{
+            border: var(--border);
+            padding: var(--padding_table_box);
+            text-align: center;
         }
         td img{
             width: 150px;
         }
         .container {
-            width: 670px;
+            width: 790px;
+            padding: 10px;
+            border: var(--border);
         }
 
         .text_center {
@@ -32,7 +43,7 @@
         }
 
         h1 {
-            margin: 25px;
+            margin: 15px;
             font-size: var(--h1_font);
         }
 
@@ -41,34 +52,132 @@
             justify-content: space-between;
 
         }
+        .flex_row p{
+            margin-top: 45px;
+            width: 207px;
+            text-align: center;
+            padding-top: 5px;
+            border-top: var(--dashed_border);
+        }
+        .justify{
+            text-align: justify;
+        }
+        p{
+            padding: 2px 15px;
+        }
+        .main_bottom td{
+            padding: 5px 15px;
+        }
+        .main_bottom{
+            display: flex;
+            justify-content: center;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 0px 10px 0px;
+        }
+        footer{
+            margin-top: 15px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-
-        <header class="header">
-            <table class="text_center" style="border-collapse: collapse;">
-                <tr>
-                    <td class="logo"><img src="/images/nidhi_software_logo.png" alt="nidhi"></td>
-                    <td>
-                        <table class="table" style="border-collapse: collapse;">
-                            <tr>
-                                <th colspan="2">NIDHI SOFWARE PRO</th>
-                            </tr>
-                            <tr>
-                                <td>REG. NO.</td>
-                                <td>U65999BR2019PLC041305</td>
-                            </tr>
-                            <tr>
-                                <td>Branch Name : </td>
-                                <td>MUZAFFARPUR</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </header>
+    <div class="outer">
+        <div class="container">
+    
+            <header class="header">
+                <table class="text_center" style="border-collapse: collapse;">
+                    <tr>
+                        <td class="logo"><img src="/images/nidhi_software_logo.png" alt="nidhi"></td>
+                        <td>
+                            <table class="table" style="border-collapse: collapse;">
+                                <tr>
+                                    <th colspan="2">NIDHI SOFWARE PRO</th>
+                                </tr>
+                                <tr>
+                                    <td>REG. NO.</td>
+                                    <td>U65999BR2019PLC041305</td>
+                                </tr>
+                                <tr>
+                                    <td>Branch Name : </td>
+                                    <td>MUZAFFARPUR</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </header>
+            <main class="main">
+                <h1 class="text_center"><u>Instruction for Disbursement of the Loan Amount</u></h1>
+                <br><br>
+                <p class="right">To,</p>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>NIDHI SOFTWARE PRO</strong></p><br>
+                <div class="main_body">
+                    <p class="justify"><strong>sub: </strong>Authorization for disbursement Sir, Refer to the Application for grant of Loan facility for to Kindly
+                        prepare the Loan disbursement cheque in the name and manner hereinafter appearing:</p><br>
+                        <p>Name of the Payee : <span><strong>MD AFTAB ALI</strong></span></p><br>
+                        <p>Amount(Rs.) : <span><strong><u>15000.00</u></strong></span></p><br>
+                        <p class="justify">The disbursement of the Loan amount in favour of the above payee shall not affect my/ our obligation in
+                            relation to the Loan facility. The disbursement of the Loan in favour of the above Payee shall be deemed
+                            to be the Loan granted to and availed by me/us.</p><br>
+                        <p class="text_center" style="margin: 20px;"><strong><u>Confirmation :-</u></strong></p>
+                        <p class="text_center">I / we acknowledge having received the Cash / Cheque of the following description towards disbursement
+                            of the loan amount to me / us.</p>
+                        <div class="main_bottom" style="margin: 25px;">
+                            <table>
+                                <tr>
+                                    <th class="text_center" colspan="2">Disbursement Details</th>
+                                </tr>
+                                <tr>
+                                    <td>Name of the Applicant</td>
+                                    <td>MD AFTAB ALI</td>
+                                </tr>
+                                <tr>
+                                    <td>Name of the Co-Applicant</td>
+                                    <td>VARUN SHARMA</td>
+                                </tr>
+                                <tr>
+                                    <td>Name of the Authorised Signatory</td>
+                                    <td>PRAKASH SHARMA</td>
+                                </tr>
+                                <tr>
+                                    <td>AMOUNT (RS)</td>
+                                    <td>15000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>DATE</td>
+                                    <td>26/11/2022</td>
+                                </tr>
+                                <tr>
+                                    <td>PAYMENT MODE</td>
+                                    <td>TRANSFER</td>
+                                </tr>
+                                <tr>
+                                    <td>SB A/C NO</td>
+                                    <td>147200027</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <p class="text_center">Thanking you!</p>
+                        <footer class="footer">
+                            <div class="flex_row">
+                                <p>Signature of Applicant</p>
+                                <p>Signature of Co-Applicant</p>
+                                <p>Authorised Signatory</p>
+                            </div>
+                        </footer>
+                        <div class="flex">
+                            <p>visit us : <span>nidhisoftwares.com</span></p>
+                            <p>Email : <span>support@nidhisoftwares.com</span></p>
+                        </div>
+    
+                </div>
+            </main>
+        </div>
     </div>
 </body>
 
